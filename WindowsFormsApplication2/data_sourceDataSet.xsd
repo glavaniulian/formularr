@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="data_sourceDataSet" targetNamespace="http://tempuri.org/data_sourceDataSet.xsd" xmlns:mstns="http://tempuri.org/data_sourceDataSet.xsd" xmlns="http://tempuri.org/data_sourceDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="data_sourceConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="data_sourceConnection (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication2.Properties.Settings.GlobalReference.Default.data_sourceConnection" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="infoTableAdapter" GeneratorDataComponentClassName="infoTableAdapter" Name="info" UserDataComponentName="infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="data_sourceConnection (Settings)" DbObjectName="dbo.info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[info] WHERE (([Id] = @Original_Id) AND ((@IsNull_fac = 1 AND [fac] IS NULL) OR ([fac] = @Original_fac)) AND ((@IsNull_dom = 1 AND [dom] IS NULL) OR ([dom] = @Original_dom)) AND ((@IsNull_spec = 1 AND [spec] IS NULL) OR ([spec] = @Original_spec)) AND ((@IsNull_data = 1 AND [data] IS NULL) OR ([data] = @Original_data)) AND ((@IsNull_form_invat = 1 AND [form_invat] IS NULL) OR ([form_invat] = @Original_form_invat)) AND ((@IsNull_nume_prenume = 1 AND [nume_prenume] IS NULL) OR ([nume_prenume] = @Original_nume_prenume)) AND ((@IsNull_cod_legitimatie = 1 AND [cod_legitimatie] IS NULL) OR ([cod_legitimatie] = @Original_cod_legitimatie)) AND ((@IsNull_localitate = 1 AND [localitate] IS NULL) OR ([localitate] = @Original_localitate)) AND ((@IsNull_judet = 1 AND [judet] IS NULL) OR ([judet] = @Original_judet)) AND ((@IsNull_tara = 1 AND [tara] IS NULL) OR ([tara] = @Original_tara)) AND ((@IsNull_strada = 1 AND [strada] IS NULL) OR ([strada] = @Original_strada)) AND ((@IsNull_numar = 1 AND [numar] IS NULL) OR ([numar] = @Original_numar)) AND ((@IsNull_bloc = 1 AND [bloc] IS NULL) OR ([bloc] = @Original_bloc)) AND ((@IsNull_scara = 1 AND [scara] IS NULL) OR ([scara] = @Original_scara)) AND ((@IsNull_etaj = 1 AND [etaj] IS NULL) OR ([etaj] = @Original_etaj)) AND ((@IsNull_apartament = 1 AND [apartament] IS NULL) OR ([apartament] = @Original_apartament)) AND ((@IsNull_sector = 1 AND [sector] IS NULL) OR ([sector] = @Original_sector)) AND ((@IsNull_cod_postal = 1 AND [cod_postal] IS NULL) OR ([cod_postal] = @Original_cod_postal)) AND ((@IsNull_data_n = 1 AND [data_n] IS NULL) OR ([data_n] = @Original_data_n)) AND ((@IsNull_loc_nastere = 1 AND [loc_nastere] IS NULL) OR ([loc_nastere] = @Original_loc_nastere)) AND ((@IsNull_judet_n = 1 AND [judet_n] IS NULL) OR ([judet_n] = @Original_judet_n)) AND ((@IsNull_tara_n = 1 AND [tara_n] IS NULL) OR ([tara_n] = @Original_tara_n)) AND ((@IsNull_sexul = 1 AND [sexul] IS NULL) OR ([sexul] = @Original_sexul)) AND ((@IsNull_stare_civila = 1 AND [stare_civila] IS NULL) OR ([stare_civila] = @Original_stare_civila)) AND ((@IsNull_cetatenie = 1 AND [cetatenie] IS NULL) OR ([cetatenie] = @Original_cetatenie)) AND ((@IsNull_cetatenie_op = 1 AND [cetatenie_op] IS NULL) OR ([cetatenie_op] = @Original_cetatenie_op)) AND ((@IsNull_etnie = 1 AND [etnie] IS NULL) OR ([etnie] = @Original_etnie)) AND ((@IsNull_incadrare = 1 AND [incadrare] IS NULL) OR ([incadrare] = @Original_incadrare)) AND ((@IsNull_cnp = 1 AND [cnp] IS NULL) OR ([cnp] = @Original_cnp)) AND ((@IsNull_serie = 1 AND [serie] IS NULL) OR ([serie] = @Original_serie)) AND ((@IsNull_numar_cnp = 1 AND [numar_cnp] IS NULL) OR ([numar_cnp] = @Original_numar_cnp)) AND ((@IsNull_eliberat_de_catre = 1 AND [eliberat_de_catre] IS NULL) OR ([eliberat_de_catre] = @Original_eliberat_de_catre)) AND ((@IsNull_data_eliberare = 1 AND [data_eliberare] IS NULL) OR ([data_eliberare] = @Original_data_eliberare)) AND ((@IsNull_studii = 1 AND [studii] IS NULL) OR ([studii] = @Original_studii)) AND ((@IsNull_unitate_invatamant = 1 AND [unitate_invatamant] IS NULL) OR ([unitate_invatamant] = @Original_unitate_invatamant)) AND ((@IsNull_specializare = 1 AND [specializare] IS NULL) OR ([specializare] = @Original_specializare)) AND ((@IsNull_oras_studii = 1 AND [oras_studii] IS NULL) OR ([oras_studii] = @Original_oras_studii)) AND ((@IsNull_judet_studii = 1 AND [judet_studii] IS NULL) OR ([judet_studii] = @Original_judet_studii)) AND ((@IsNull_tara_studii = 1 AND [tara_studii] IS NULL) OR ([tara_studii] = @Original_tara_studii)) AND ((@IsNull_forma_invatamant = 1 AND [forma_invatamant] IS NULL) OR ([forma_invatamant] = @Original_forma_invatamant)) AND ((@IsNull_media = 1 AND [media] IS NULL) OR ([media] = @Original_media)) AND ((@IsNull_durata_studii = 1 AND [durata_studii] IS NULL) OR ([durata_studii] = @Original_durata_studii)) AND ((@IsNull_data_absolvirii = 1 AND [data_absolvirii] IS NULL) OR ([data_absolvirii] = @Original_data_absolvirii)) AND ((@IsNull_tipul_diploma = 1 AND [tipul_diploma] IS NULL) OR ([tipul_diploma] = @Original_tipul_diploma)) AND ((@IsNull_serie_diploma = 1 AND [serie_diploma] IS NULL) OR ([serie_diploma] = @Original_serie_diploma)) AND ((@IsNull_numar_diploma = 1 AND [numar_diploma] IS NULL) OR ([numar_diploma] = @Original_numar_diploma)) AND ((@IsNull_emis = 1 AND [emis] IS NULL) OR ([emis] = @Original_emis)) AND ((@IsNull_data_emiterii = 1 AND [data_emiterii] IS NULL) OR ([data_emiterii] = @Original_data_emiterii)) AND ((@IsNull_numarul_foii_matricole = 1 AND [numarul_foii_matricole] IS NULL) OR ([numarul_foii_matricole] = @Original_numarul_foii_matricole)) AND ((@IsNull_diploma_original = 1 AND [diploma_original] IS NULL) OR ([diploma_original] = @Original_diploma_original)) AND ((@IsNull_adeverinta_absolvire_original = 1 AND [adeverinta_absolvire_original] IS NULL) OR ([adeverinta_absolvire_original] = @Original_adeverinta_absolvire_original)) AND ((@IsNull_adeverinta_absolvire_copielegalizata = 1 AND [adeverinta_absolvire_copielegalizata] IS NULL) OR ([adeverinta_absolvire_copielegalizata] = @Original_adeverinta_absolvire_copielegalizata)) AND ((@IsNull_atestat_original = 1 AND [atestat_original] IS NULL) OR ([atestat_original] = @Original_atestat_original)) AND ((@IsNull_atestat_legalizat = 1 AND [atestat_legalizat] IS NULL) OR ([atestat_legalizat] = @Original_atestat_legalizat)) AND ((@IsNull_certificat_nastere = 1 AND [certificat_nastere] IS NULL) OR ([certificat_nastere] = @Original_certificat_nastere)) AND ((@IsNull_certificat_casatorie = 1 AND [certificat_casatorie] IS NULL) OR ([certificat_casatorie] = @Original_certificat_casatorie)) AND ((@IsNull_foto_3_4_da = 1 AND [foto_3_4_da] IS NULL) OR ([foto_3_4_da] = @Original_foto_3_4_da)) AND ((@IsNull_foto_3_4_nu = 1 AND [foto_3_4_nu] IS NULL) OR ([foto_3_4_nu] = @Original_foto_3_4_nu)) AND ((@IsNull_adeverinta_med_da = 1 AND [adeverinta_med_da] IS NULL) OR ([adeverinta_med_da] = @Original_adeverinta_med_da)) AND ((@IsNull_adeverinta_med_nu = 1 AND [adeverinta_med_nu] IS NULL) OR ([adeverinta_med_nu] = @Original_adeverinta_med_nu)) AND ((@IsNull_copie_buletin_da = 1 AND [copie_buletin_da] IS NULL) OR ([copie_buletin_da] = @Original_copie_buletin_da)) AND ((@IsNull_copie_buletin_nu = 1 AND [copie_buletin_nu] IS NULL) OR ([copie_buletin_nu] = @Original_copie_buletin_nu)) AND ((@IsNull_foaie_matricola_da = 1 AND [foaie_matricola_da] IS NULL) OR ([foaie_matricola_da] = @Original_foaie_matricola_da)) AND ((@IsNull_foaie_matricola_nu = 1 AND [foaie_matricola_nu] IS NULL) OR ([foaie_matricola_nu] = @Original_foaie_matricola_nu)) AND ((@IsNull_taxa_achitata_da = 1 AND [taxa_achitata_da] IS NULL) OR ([taxa_achitata_da] = @Original_taxa_achitata_da)) AND ((@IsNull_taxa_achitata_nu = 1 AND [taxa_achitata_nu] IS NULL) OR ([taxa_achitata_nu] = @Original_taxa_achitata_nu)) AND ((@IsNull_introducere_date = 1 AND [introducere_date] IS NULL) OR ([introducere_date] = @Original_introducere_date)) AND ((@IsNull_semnatura = 1 AND [semnatura] IS NULL) OR ([semnatura] = @Original_semnatura)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_fac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_dom" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_dom" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_spec" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_spec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_form_invat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_form_invat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_nume_prenume" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_nume_prenume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cod_legitimatie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cod_legitimatie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_localitate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_localitate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_strada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_strada" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_bloc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_bloc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scara" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_scara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_loc_nastere" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_loc_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_sexul" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_sexul" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_stare_civila" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_stare_civila" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cetatenie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cetatenie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cetatenie_op" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cetatenie_op" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_etnie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_etnie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_incadrare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_incadrare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cnp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_serie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_serie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar_cnp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_numar_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_eliberat_de_catre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_eliberat_de_catre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_eliberare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_eliberare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_unitate_invatamant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_unitate_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_specializare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_specializare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_oras_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_oras_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_forma_invatamant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_forma_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_media" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_media" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_absolvirii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_absolvirii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tipul_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tipul_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_serie_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_serie_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_numar_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_emis" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_emis" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_emiterii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_emiterii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_diploma_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_diploma_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_absolvire_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_absolvire_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_atestat_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_atestat_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_atestat_legalizat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_atestat_legalizat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_certificat_nastere" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_certificat_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_certificat_casatorie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_certificat_casatorie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foto_3_4_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foto_3_4_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foto_3_4_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foto_3_4_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_med_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_med_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_med_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_med_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_copie_buletin_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_copie_buletin_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_copie_buletin_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_copie_buletin_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foaie_matricola_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foaie_matricola_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foaie_matricola_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foaie_matricola_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_taxa_achitata_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_taxa_achitata_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_taxa_achitata_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_taxa_achitata_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_introducere_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_introducere_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_semnatura" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_semnatura" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[info] ([fac], [dom], [spec], [data], [form_invat], [nume_prenume], [cod_legitimatie], [localitate], [judet], [tara], [strada], [numar], [bloc], [scara], [etaj], [apartament], [sector], [cod_postal], [data_n], [loc_nastere], [judet_n], [tara_n], [sexul], [stare_civila], [cetatenie], [cetatenie_op], [etnie], [incadrare], [cnp], [serie], [numar_cnp], [eliberat_de_catre], [data_eliberare], [studii], [unitate_invatamant], [specializare], [oras_studii], [judet_studii], [tara_studii], [forma_invatamant], [media], [durata_studii], [data_absolvirii], [tipul_diploma], [serie_diploma], [numar_diploma], [emis], [data_emiterii], [numarul_foii_matricole], [diploma_original], [adeverinta_absolvire_original], [adeverinta_absolvire_copielegalizata], [atestat_original], [atestat_legalizat], [certificat_nastere], [certificat_casatorie], [foto_3_4_da], [foto_3_4_nu], [adeverinta_med_da], [adeverinta_med_nu], [copie_buletin_da], [copie_buletin_nu], [foaie_matricola_da], [foaie_matricola_nu], [taxa_achitata_da], [taxa_achitata_nu], [introducere_date], [semnatura]) VALUES (@fac, @dom, @spec, @data, @form_invat, @nume_prenume, @cod_legitimatie, @localitate, @judet, @tara, @strada, @numar, @bloc, @scara, @etaj, @apartament, @sector, @cod_postal, @data_n, @loc_nastere, @judet_n, @tara_n, @sexul, @stare_civila, @cetatenie, @cetatenie_op, @etnie, @incadrare, @cnp, @serie, @numar_cnp, @eliberat_de_catre, @data_eliberare, @studii, @unitate_invatamant, @specializare, @oras_studii, @judet_studii, @tara_studii, @forma_invatamant, @media, @durata_studii, @data_absolvirii, @tipul_diploma, @serie_diploma, @numar_diploma, @emis, @data_emiterii, @numarul_foii_matricole, @diploma_original, @adeverinta_absolvire_original, @adeverinta_absolvire_copielegalizata, @atestat_original, @atestat_legalizat, @certificat_nastere, @certificat_casatorie, @foto_3_4_da, @foto_3_4_nu, @adeverinta_med_da, @adeverinta_med_nu, @copie_buletin_da, @copie_buletin_nu, @foaie_matricola_da, @foaie_matricola_nu, @taxa_achitata_da, @taxa_achitata_nu, @introducere_date, @semnatura);
+SELECT Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura FROM info WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@fac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@dom" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@spec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@form_invat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@nume_prenume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cod_legitimatie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@localitate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@strada" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@bloc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@scara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@loc_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@sexul" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stare_civila" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cetatenie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cetatenie_op" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@etnie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@incadrare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@serie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numar_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@eliberat_de_catre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_eliberare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unitate_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@specializare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@oras_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@forma_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@media" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_absolvirii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tipul_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@serie_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numar_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@emis" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_emiterii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@diploma_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_absolvire_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@atestat_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@atestat_legalizat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@certificat_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@certificat_casatorie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foto_3_4_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foto_3_4_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_med_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_med_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@copie_buletin_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@copie_buletin_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foaie_matricola_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foaie_matricola_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@taxa_achitata_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@taxa_achitata_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@introducere_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@semnatura" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura FROM dbo.info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[info] SET [fac] = @fac, [dom] = @dom, [spec] = @spec, [data] = @data, [form_invat] = @form_invat, [nume_prenume] = @nume_prenume, [cod_legitimatie] = @cod_legitimatie, [localitate] = @localitate, [judet] = @judet, [tara] = @tara, [strada] = @strada, [numar] = @numar, [bloc] = @bloc, [scara] = @scara, [etaj] = @etaj, [apartament] = @apartament, [sector] = @sector, [cod_postal] = @cod_postal, [data_n] = @data_n, [loc_nastere] = @loc_nastere, [judet_n] = @judet_n, [tara_n] = @tara_n, [sexul] = @sexul, [stare_civila] = @stare_civila, [cetatenie] = @cetatenie, [cetatenie_op] = @cetatenie_op, [etnie] = @etnie, [incadrare] = @incadrare, [cnp] = @cnp, [serie] = @serie, [numar_cnp] = @numar_cnp, [eliberat_de_catre] = @eliberat_de_catre, [data_eliberare] = @data_eliberare, [studii] = @studii, [unitate_invatamant] = @unitate_invatamant, [specializare] = @specializare, [oras_studii] = @oras_studii, [judet_studii] = @judet_studii, [tara_studii] = @tara_studii, [forma_invatamant] = @forma_invatamant, [media] = @media, [durata_studii] = @durata_studii, [data_absolvirii] = @data_absolvirii, [tipul_diploma] = @tipul_diploma, [serie_diploma] = @serie_diploma, [numar_diploma] = @numar_diploma, [emis] = @emis, [data_emiterii] = @data_emiterii, [numarul_foii_matricole] = @numarul_foii_matricole, [diploma_original] = @diploma_original, [adeverinta_absolvire_original] = @adeverinta_absolvire_original, [adeverinta_absolvire_copielegalizata] = @adeverinta_absolvire_copielegalizata, [atestat_original] = @atestat_original, [atestat_legalizat] = @atestat_legalizat, [certificat_nastere] = @certificat_nastere, [certificat_casatorie] = @certificat_casatorie, [foto_3_4_da] = @foto_3_4_da, [foto_3_4_nu] = @foto_3_4_nu, [adeverinta_med_da] = @adeverinta_med_da, [adeverinta_med_nu] = @adeverinta_med_nu, [copie_buletin_da] = @copie_buletin_da, [copie_buletin_nu] = @copie_buletin_nu, [foaie_matricola_da] = @foaie_matricola_da, [foaie_matricola_nu] = @foaie_matricola_nu, [taxa_achitata_da] = @taxa_achitata_da, [taxa_achitata_nu] = @taxa_achitata_nu, [introducere_date] = @introducere_date, [semnatura] = @semnatura WHERE (([Id] = @Original_Id) AND ((@IsNull_fac = 1 AND [fac] IS NULL) OR ([fac] = @Original_fac)) AND ((@IsNull_dom = 1 AND [dom] IS NULL) OR ([dom] = @Original_dom)) AND ((@IsNull_spec = 1 AND [spec] IS NULL) OR ([spec] = @Original_spec)) AND ((@IsNull_data = 1 AND [data] IS NULL) OR ([data] = @Original_data)) AND ((@IsNull_form_invat = 1 AND [form_invat] IS NULL) OR ([form_invat] = @Original_form_invat)) AND ((@IsNull_nume_prenume = 1 AND [nume_prenume] IS NULL) OR ([nume_prenume] = @Original_nume_prenume)) AND ((@IsNull_cod_legitimatie = 1 AND [cod_legitimatie] IS NULL) OR ([cod_legitimatie] = @Original_cod_legitimatie)) AND ((@IsNull_localitate = 1 AND [localitate] IS NULL) OR ([localitate] = @Original_localitate)) AND ((@IsNull_judet = 1 AND [judet] IS NULL) OR ([judet] = @Original_judet)) AND ((@IsNull_tara = 1 AND [tara] IS NULL) OR ([tara] = @Original_tara)) AND ((@IsNull_strada = 1 AND [strada] IS NULL) OR ([strada] = @Original_strada)) AND ((@IsNull_numar = 1 AND [numar] IS NULL) OR ([numar] = @Original_numar)) AND ((@IsNull_bloc = 1 AND [bloc] IS NULL) OR ([bloc] = @Original_bloc)) AND ((@IsNull_scara = 1 AND [scara] IS NULL) OR ([scara] = @Original_scara)) AND ((@IsNull_etaj = 1 AND [etaj] IS NULL) OR ([etaj] = @Original_etaj)) AND ((@IsNull_apartament = 1 AND [apartament] IS NULL) OR ([apartament] = @Original_apartament)) AND ((@IsNull_sector = 1 AND [sector] IS NULL) OR ([sector] = @Original_sector)) AND ((@IsNull_cod_postal = 1 AND [cod_postal] IS NULL) OR ([cod_postal] = @Original_cod_postal)) AND ((@IsNull_data_n = 1 AND [data_n] IS NULL) OR ([data_n] = @Original_data_n)) AND ((@IsNull_loc_nastere = 1 AND [loc_nastere] IS NULL) OR ([loc_nastere] = @Original_loc_nastere)) AND ((@IsNull_judet_n = 1 AND [judet_n] IS NULL) OR ([judet_n] = @Original_judet_n)) AND ((@IsNull_tara_n = 1 AND [tara_n] IS NULL) OR ([tara_n] = @Original_tara_n)) AND ((@IsNull_sexul = 1 AND [sexul] IS NULL) OR ([sexul] = @Original_sexul)) AND ((@IsNull_stare_civila = 1 AND [stare_civila] IS NULL) OR ([stare_civila] = @Original_stare_civila)) AND ((@IsNull_cetatenie = 1 AND [cetatenie] IS NULL) OR ([cetatenie] = @Original_cetatenie)) AND ((@IsNull_cetatenie_op = 1 AND [cetatenie_op] IS NULL) OR ([cetatenie_op] = @Original_cetatenie_op)) AND ((@IsNull_etnie = 1 AND [etnie] IS NULL) OR ([etnie] = @Original_etnie)) AND ((@IsNull_incadrare = 1 AND [incadrare] IS NULL) OR ([incadrare] = @Original_incadrare)) AND ((@IsNull_cnp = 1 AND [cnp] IS NULL) OR ([cnp] = @Original_cnp)) AND ((@IsNull_serie = 1 AND [serie] IS NULL) OR ([serie] = @Original_serie)) AND ((@IsNull_numar_cnp = 1 AND [numar_cnp] IS NULL) OR ([numar_cnp] = @Original_numar_cnp)) AND ((@IsNull_eliberat_de_catre = 1 AND [eliberat_de_catre] IS NULL) OR ([eliberat_de_catre] = @Original_eliberat_de_catre)) AND ((@IsNull_data_eliberare = 1 AND [data_eliberare] IS NULL) OR ([data_eliberare] = @Original_data_eliberare)) AND ((@IsNull_studii = 1 AND [studii] IS NULL) OR ([studii] = @Original_studii)) AND ((@IsNull_unitate_invatamant = 1 AND [unitate_invatamant] IS NULL) OR ([unitate_invatamant] = @Original_unitate_invatamant)) AND ((@IsNull_specializare = 1 AND [specializare] IS NULL) OR ([specializare] = @Original_specializare)) AND ((@IsNull_oras_studii = 1 AND [oras_studii] IS NULL) OR ([oras_studii] = @Original_oras_studii)) AND ((@IsNull_judet_studii = 1 AND [judet_studii] IS NULL) OR ([judet_studii] = @Original_judet_studii)) AND ((@IsNull_tara_studii = 1 AND [tara_studii] IS NULL) OR ([tara_studii] = @Original_tara_studii)) AND ((@IsNull_forma_invatamant = 1 AND [forma_invatamant] IS NULL) OR ([forma_invatamant] = @Original_forma_invatamant)) AND ((@IsNull_media = 1 AND [media] IS NULL) OR ([media] = @Original_media)) AND ((@IsNull_durata_studii = 1 AND [durata_studii] IS NULL) OR ([durata_studii] = @Original_durata_studii)) AND ((@IsNull_data_absolvirii = 1 AND [data_absolvirii] IS NULL) OR ([data_absolvirii] = @Original_data_absolvirii)) AND ((@IsNull_tipul_diploma = 1 AND [tipul_diploma] IS NULL) OR ([tipul_diploma] = @Original_tipul_diploma)) AND ((@IsNull_serie_diploma = 1 AND [serie_diploma] IS NULL) OR ([serie_diploma] = @Original_serie_diploma)) AND ((@IsNull_numar_diploma = 1 AND [numar_diploma] IS NULL) OR ([numar_diploma] = @Original_numar_diploma)) AND ((@IsNull_emis = 1 AND [emis] IS NULL) OR ([emis] = @Original_emis)) AND ((@IsNull_data_emiterii = 1 AND [data_emiterii] IS NULL) OR ([data_emiterii] = @Original_data_emiterii)) AND ((@IsNull_numarul_foii_matricole = 1 AND [numarul_foii_matricole] IS NULL) OR ([numarul_foii_matricole] = @Original_numarul_foii_matricole)) AND ((@IsNull_diploma_original = 1 AND [diploma_original] IS NULL) OR ([diploma_original] = @Original_diploma_original)) AND ((@IsNull_adeverinta_absolvire_original = 1 AND [adeverinta_absolvire_original] IS NULL) OR ([adeverinta_absolvire_original] = @Original_adeverinta_absolvire_original)) AND ((@IsNull_adeverinta_absolvire_copielegalizata = 1 AND [adeverinta_absolvire_copielegalizata] IS NULL) OR ([adeverinta_absolvire_copielegalizata] = @Original_adeverinta_absolvire_copielegalizata)) AND ((@IsNull_atestat_original = 1 AND [atestat_original] IS NULL) OR ([atestat_original] = @Original_atestat_original)) AND ((@IsNull_atestat_legalizat = 1 AND [atestat_legalizat] IS NULL) OR ([atestat_legalizat] = @Original_atestat_legalizat)) AND ((@IsNull_certificat_nastere = 1 AND [certificat_nastere] IS NULL) OR ([certificat_nastere] = @Original_certificat_nastere)) AND ((@IsNull_certificat_casatorie = 1 AND [certificat_casatorie] IS NULL) OR ([certificat_casatorie] = @Original_certificat_casatorie)) AND ((@IsNull_foto_3_4_da = 1 AND [foto_3_4_da] IS NULL) OR ([foto_3_4_da] = @Original_foto_3_4_da)) AND ((@IsNull_foto_3_4_nu = 1 AND [foto_3_4_nu] IS NULL) OR ([foto_3_4_nu] = @Original_foto_3_4_nu)) AND ((@IsNull_adeverinta_med_da = 1 AND [adeverinta_med_da] IS NULL) OR ([adeverinta_med_da] = @Original_adeverinta_med_da)) AND ((@IsNull_adeverinta_med_nu = 1 AND [adeverinta_med_nu] IS NULL) OR ([adeverinta_med_nu] = @Original_adeverinta_med_nu)) AND ((@IsNull_copie_buletin_da = 1 AND [copie_buletin_da] IS NULL) OR ([copie_buletin_da] = @Original_copie_buletin_da)) AND ((@IsNull_copie_buletin_nu = 1 AND [copie_buletin_nu] IS NULL) OR ([copie_buletin_nu] = @Original_copie_buletin_nu)) AND ((@IsNull_foaie_matricola_da = 1 AND [foaie_matricola_da] IS NULL) OR ([foaie_matricola_da] = @Original_foaie_matricola_da)) AND ((@IsNull_foaie_matricola_nu = 1 AND [foaie_matricola_nu] IS NULL) OR ([foaie_matricola_nu] = @Original_foaie_matricola_nu)) AND ((@IsNull_taxa_achitata_da = 1 AND [taxa_achitata_da] IS NULL) OR ([taxa_achitata_da] = @Original_taxa_achitata_da)) AND ((@IsNull_taxa_achitata_nu = 1 AND [taxa_achitata_nu] IS NULL) OR ([taxa_achitata_nu] = @Original_taxa_achitata_nu)) AND ((@IsNull_introducere_date = 1 AND [introducere_date] IS NULL) OR ([introducere_date] = @Original_introducere_date)) AND ((@IsNull_semnatura = 1 AND [semnatura] IS NULL) OR ([semnatura] = @Original_semnatura)));
+SELECT Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura FROM info WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@fac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@dom" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@spec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@form_invat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@nume_prenume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cod_legitimatie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@localitate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@strada" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@bloc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@scara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@loc_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@sexul" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stare_civila" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cetatenie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cetatenie_op" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@etnie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@incadrare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@serie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numar_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@eliberat_de_catre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_eliberare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unitate_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@specializare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@oras_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@judet_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tara_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@forma_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@media" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_absolvirii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tipul_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@serie_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numar_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@emis" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@data_emiterii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@diploma_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_absolvire_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@atestat_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@atestat_legalizat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@certificat_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@certificat_casatorie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foto_3_4_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foto_3_4_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_med_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@adeverinta_med_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@copie_buletin_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@copie_buletin_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foaie_matricola_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@foaie_matricola_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@taxa_achitata_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@taxa_achitata_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@introducere_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@semnatura" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_fac" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="fac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_dom" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_dom" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dom" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_spec" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_spec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="spec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_form_invat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_form_invat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="form_invat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_nume_prenume" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_nume_prenume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nume_prenume" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cod_legitimatie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cod_legitimatie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cod_legitimatie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_localitate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_localitate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="localitate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_strada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_strada" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="strada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_numar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_bloc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_bloc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="bloc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_scara" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_scara" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="scara" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_etaj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etaj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_apartament" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="apartament" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_sector" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sector" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_cod_postal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cod_postal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_loc_nastere" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_loc_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="loc_nastere" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara_n" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara_n" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_n" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_sexul" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_sexul" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="sexul" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_stare_civila" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_stare_civila" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stare_civila" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cetatenie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cetatenie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cetatenie_op" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cetatenie_op" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cetatenie_op" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_etnie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_etnie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="etnie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_incadrare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_incadrare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="incadrare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cnp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cnp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_serie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_serie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar_cnp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_numar_cnp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_cnp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_eliberat_de_catre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_eliberat_de_catre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="eliberat_de_catre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_eliberare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_eliberare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_eliberare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_unitate_invatamant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_unitate_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unitate_invatamant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_specializare" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_specializare" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="specializare" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_oras_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_oras_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="oras_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_judet_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_judet_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="judet_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tara_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tara_studii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tara_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_forma_invatamant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_forma_invatamant" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="forma_invatamant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_media" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_media" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="media" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_durata_studii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="durata_studii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_absolvirii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_absolvirii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_absolvirii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_tipul_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_tipul_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipul_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_serie_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_serie_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="serie_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numar_diploma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_numar_diploma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numar_diploma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_emis" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_emis" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="emis" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_emiterii" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_data_emiterii" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="data_emiterii" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_numarul_foii_matricole" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="numarul_foii_matricole" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_diploma_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_diploma_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="diploma_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_absolvire_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_absolvire_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_absolvire_copielegalizata" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_absolvire_copielegalizata" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_atestat_original" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_atestat_original" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_original" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_atestat_legalizat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_atestat_legalizat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="atestat_legalizat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_certificat_nastere" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_certificat_nastere" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_nastere" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_certificat_casatorie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_certificat_casatorie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="certificat_casatorie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foto_3_4_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foto_3_4_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foto_3_4_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foto_3_4_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foto_3_4_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_med_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_med_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_adeverinta_med_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_adeverinta_med_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="adeverinta_med_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_copie_buletin_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_copie_buletin_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_copie_buletin_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_copie_buletin_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="copie_buletin_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foaie_matricola_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foaie_matricola_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_foaie_matricola_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_foaie_matricola_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="foaie_matricola_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_taxa_achitata_da" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_taxa_achitata_da" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_da" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_taxa_achitata_nu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_taxa_achitata_nu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="taxa_achitata_nu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_introducere_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_introducere_date" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="introducere_date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_semnatura" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_semnatura" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="semnatura" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="[E:\2\WINDOWSFORMSAPPLICATION2\DATA_SOURCE.MDF].dbo.info" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="fac" DataSetColumn="fac" />
+              <Mapping SourceColumn="dom" DataSetColumn="dom" />
+              <Mapping SourceColumn="spec" DataSetColumn="spec" />
+              <Mapping SourceColumn="data" DataSetColumn="data" />
+              <Mapping SourceColumn="form_invat" DataSetColumn="form_invat" />
+              <Mapping SourceColumn="nume_prenume" DataSetColumn="nume_prenume" />
+              <Mapping SourceColumn="cod_legitimatie" DataSetColumn="cod_legitimatie" />
+              <Mapping SourceColumn="localitate" DataSetColumn="localitate" />
+              <Mapping SourceColumn="judet" DataSetColumn="judet" />
+              <Mapping SourceColumn="tara" DataSetColumn="tara" />
+              <Mapping SourceColumn="strada" DataSetColumn="strada" />
+              <Mapping SourceColumn="numar" DataSetColumn="numar" />
+              <Mapping SourceColumn="bloc" DataSetColumn="bloc" />
+              <Mapping SourceColumn="scara" DataSetColumn="scara" />
+              <Mapping SourceColumn="etaj" DataSetColumn="etaj" />
+              <Mapping SourceColumn="apartament" DataSetColumn="apartament" />
+              <Mapping SourceColumn="sector" DataSetColumn="sector" />
+              <Mapping SourceColumn="cod_postal" DataSetColumn="cod_postal" />
+              <Mapping SourceColumn="data_n" DataSetColumn="data_n" />
+              <Mapping SourceColumn="loc_nastere" DataSetColumn="loc_nastere" />
+              <Mapping SourceColumn="judet_n" DataSetColumn="judet_n" />
+              <Mapping SourceColumn="tara_n" DataSetColumn="tara_n" />
+              <Mapping SourceColumn="sexul" DataSetColumn="sexul" />
+              <Mapping SourceColumn="stare_civila" DataSetColumn="stare_civila" />
+              <Mapping SourceColumn="cetatenie" DataSetColumn="cetatenie" />
+              <Mapping SourceColumn="cetatenie_op" DataSetColumn="cetatenie_op" />
+              <Mapping SourceColumn="etnie" DataSetColumn="etnie" />
+              <Mapping SourceColumn="incadrare" DataSetColumn="incadrare" />
+              <Mapping SourceColumn="cnp" DataSetColumn="cnp" />
+              <Mapping SourceColumn="serie" DataSetColumn="serie" />
+              <Mapping SourceColumn="numar_cnp" DataSetColumn="numar_cnp" />
+              <Mapping SourceColumn="eliberat_de_catre" DataSetColumn="eliberat_de_catre" />
+              <Mapping SourceColumn="data_eliberare" DataSetColumn="data_eliberare" />
+              <Mapping SourceColumn="studii" DataSetColumn="studii" />
+              <Mapping SourceColumn="unitate_invatamant" DataSetColumn="unitate_invatamant" />
+              <Mapping SourceColumn="specializare" DataSetColumn="specializare" />
+              <Mapping SourceColumn="oras_studii" DataSetColumn="oras_studii" />
+              <Mapping SourceColumn="judet_studii" DataSetColumn="judet_studii" />
+              <Mapping SourceColumn="tara_studii" DataSetColumn="tara_studii" />
+              <Mapping SourceColumn="forma_invatamant" DataSetColumn="forma_invatamant" />
+              <Mapping SourceColumn="media" DataSetColumn="media" />
+              <Mapping SourceColumn="durata_studii" DataSetColumn="durata_studii" />
+              <Mapping SourceColumn="data_absolvirii" DataSetColumn="data_absolvirii" />
+              <Mapping SourceColumn="tipul_diploma" DataSetColumn="tipul_diploma" />
+              <Mapping SourceColumn="serie_diploma" DataSetColumn="serie_diploma" />
+              <Mapping SourceColumn="numar_diploma" DataSetColumn="numar_diploma" />
+              <Mapping SourceColumn="emis" DataSetColumn="emis" />
+              <Mapping SourceColumn="data_emiterii" DataSetColumn="data_emiterii" />
+              <Mapping SourceColumn="numarul_foii_matricole" DataSetColumn="numarul_foii_matricole" />
+              <Mapping SourceColumn="diploma_original" DataSetColumn="diploma_original" />
+              <Mapping SourceColumn="adeverinta_absolvire_original" DataSetColumn="adeverinta_absolvire_original" />
+              <Mapping SourceColumn="adeverinta_absolvire_copielegalizata" DataSetColumn="adeverinta_absolvire_copielegalizata" />
+              <Mapping SourceColumn="atestat_original" DataSetColumn="atestat_original" />
+              <Mapping SourceColumn="atestat_legalizat" DataSetColumn="atestat_legalizat" />
+              <Mapping SourceColumn="certificat_nastere" DataSetColumn="certificat_nastere" />
+              <Mapping SourceColumn="certificat_casatorie" DataSetColumn="certificat_casatorie" />
+              <Mapping SourceColumn="foto_3_4_da" DataSetColumn="foto_3_4_da" />
+              <Mapping SourceColumn="foto_3_4_nu" DataSetColumn="foto_3_4_nu" />
+              <Mapping SourceColumn="adeverinta_med_da" DataSetColumn="adeverinta_med_da" />
+              <Mapping SourceColumn="adeverinta_med_nu" DataSetColumn="adeverinta_med_nu" />
+              <Mapping SourceColumn="copie_buletin_da" DataSetColumn="copie_buletin_da" />
+              <Mapping SourceColumn="copie_buletin_nu" DataSetColumn="copie_buletin_nu" />
+              <Mapping SourceColumn="foaie_matricola_da" DataSetColumn="foaie_matricola_da" />
+              <Mapping SourceColumn="foaie_matricola_nu" DataSetColumn="foaie_matricola_nu" />
+              <Mapping SourceColumn="taxa_achitata_da" DataSetColumn="taxa_achitata_da" />
+              <Mapping SourceColumn="taxa_achitata_nu" DataSetColumn="taxa_achitata_nu" />
+              <Mapping SourceColumn="introducere_date" DataSetColumn="introducere_date" />
+              <Mapping SourceColumn="semnatura" DataSetColumn="semnatura" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="data_sourceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="data_sourceDataSet" msprop:Generator_UserDSName="data_sourceDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="info" msprop:Generator_TableClassName="infoDataTable" msprop:Generator_TableVarName="tableinfo" msprop:Generator_TablePropName="info" msprop:Generator_RowDeletingName="infoRowDeleting" msprop:Generator_RowChangingName="infoRowChanging" msprop:Generator_RowEvHandlerName="infoRowChangeEventHandler" msprop:Generator_RowDeletedName="infoRowDeleted" msprop:Generator_UserTableName="info" msprop:Generator_RowChangedName="infoRowChanged" msprop:Generator_RowEvArgName="infoRowChangeEvent" msprop:Generator_RowClassName="infoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="fac" msprop:Generator_ColumnVarNameInTable="columnfac" msprop:Generator_ColumnPropNameInRow="fac" msprop:Generator_ColumnPropNameInTable="facColumn" msprop:Generator_UserColumnName="fac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dom" msprop:Generator_ColumnVarNameInTable="columndom" msprop:Generator_ColumnPropNameInRow="dom" msprop:Generator_ColumnPropNameInTable="domColumn" msprop:Generator_UserColumnName="dom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="spec" msprop:Generator_ColumnVarNameInTable="columnspec" msprop:Generator_ColumnPropNameInRow="spec" msprop:Generator_ColumnPropNameInTable="specColumn" msprop:Generator_UserColumnName="spec" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="form_invat" msprop:Generator_ColumnVarNameInTable="columnform_invat" msprop:Generator_ColumnPropNameInRow="form_invat" msprop:Generator_ColumnPropNameInTable="form_invatColumn" msprop:Generator_UserColumnName="form_invat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nume_prenume" msprop:Generator_ColumnVarNameInTable="columnnume_prenume" msprop:Generator_ColumnPropNameInRow="nume_prenume" msprop:Generator_ColumnPropNameInTable="nume_prenumeColumn" msprop:Generator_UserColumnName="nume_prenume" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cod_legitimatie" msprop:Generator_ColumnVarNameInTable="columncod_legitimatie" msprop:Generator_ColumnPropNameInRow="cod_legitimatie" msprop:Generator_ColumnPropNameInTable="cod_legitimatieColumn" msprop:Generator_UserColumnName="cod_legitimatie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="localitate" msprop:Generator_ColumnVarNameInTable="columnlocalitate" msprop:Generator_ColumnPropNameInRow="localitate" msprop:Generator_ColumnPropNameInTable="localitateColumn" msprop:Generator_UserColumnName="localitate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="judet" msprop:Generator_ColumnVarNameInTable="columnjudet" msprop:Generator_ColumnPropNameInRow="judet" msprop:Generator_ColumnPropNameInTable="judetColumn" msprop:Generator_UserColumnName="judet" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tara" msprop:Generator_ColumnVarNameInTable="columntara" msprop:Generator_ColumnPropNameInRow="tara" msprop:Generator_ColumnPropNameInTable="taraColumn" msprop:Generator_UserColumnName="tara" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strada" msprop:Generator_ColumnVarNameInTable="columnstrada" msprop:Generator_ColumnPropNameInRow="strada" msprop:Generator_ColumnPropNameInTable="stradaColumn" msprop:Generator_UserColumnName="strada" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numar" msprop:Generator_ColumnVarNameInTable="columnnumar" msprop:Generator_ColumnPropNameInRow="numar" msprop:Generator_ColumnPropNameInTable="numarColumn" msprop:Generator_UserColumnName="numar" type="xs:int" minOccurs="0" />
+              <xs:element name="bloc" msprop:Generator_ColumnVarNameInTable="columnbloc" msprop:Generator_ColumnPropNameInRow="bloc" msprop:Generator_ColumnPropNameInTable="blocColumn" msprop:Generator_UserColumnName="bloc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="scara" msprop:Generator_ColumnVarNameInTable="columnscara" msprop:Generator_ColumnPropNameInRow="scara" msprop:Generator_ColumnPropNameInTable="scaraColumn" msprop:Generator_UserColumnName="scara" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="etaj" msprop:Generator_ColumnVarNameInTable="columnetaj" msprop:Generator_ColumnPropNameInRow="etaj" msprop:Generator_ColumnPropNameInTable="etajColumn" msprop:Generator_UserColumnName="etaj" type="xs:int" minOccurs="0" />
+              <xs:element name="apartament" msprop:Generator_ColumnVarNameInTable="columnapartament" msprop:Generator_ColumnPropNameInRow="apartament" msprop:Generator_ColumnPropNameInTable="apartamentColumn" msprop:Generator_UserColumnName="apartament" type="xs:int" minOccurs="0" />
+              <xs:element name="sector" msprop:Generator_ColumnVarNameInTable="columnsector" msprop:Generator_ColumnPropNameInRow="sector" msprop:Generator_ColumnPropNameInTable="sectorColumn" msprop:Generator_UserColumnName="sector" type="xs:int" minOccurs="0" />
+              <xs:element name="cod_postal" msprop:Generator_ColumnVarNameInTable="columncod_postal" msprop:Generator_ColumnPropNameInRow="cod_postal" msprop:Generator_ColumnPropNameInTable="cod_postalColumn" msprop:Generator_UserColumnName="cod_postal" type="xs:int" minOccurs="0" />
+              <xs:element name="data_n" msprop:Generator_ColumnVarNameInTable="columndata_n" msprop:Generator_ColumnPropNameInRow="data_n" msprop:Generator_ColumnPropNameInTable="data_nColumn" msprop:Generator_UserColumnName="data_n" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="loc_nastere" msprop:Generator_ColumnVarNameInTable="columnloc_nastere" msprop:Generator_ColumnPropNameInRow="loc_nastere" msprop:Generator_ColumnPropNameInTable="loc_nastereColumn" msprop:Generator_UserColumnName="loc_nastere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="judet_n" msprop:Generator_ColumnVarNameInTable="columnjudet_n" msprop:Generator_ColumnPropNameInRow="judet_n" msprop:Generator_ColumnPropNameInTable="judet_nColumn" msprop:Generator_UserColumnName="judet_n" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tara_n" msprop:Generator_ColumnVarNameInTable="columntara_n" msprop:Generator_ColumnPropNameInRow="tara_n" msprop:Generator_ColumnPropNameInTable="tara_nColumn" msprop:Generator_UserColumnName="tara_n" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sexul" msprop:Generator_ColumnVarNameInTable="columnsexul" msprop:Generator_ColumnPropNameInRow="sexul" msprop:Generator_ColumnPropNameInTable="sexulColumn" msprop:Generator_UserColumnName="sexul" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stare_civila" msprop:Generator_ColumnVarNameInTable="columnstare_civila" msprop:Generator_ColumnPropNameInRow="stare_civila" msprop:Generator_ColumnPropNameInTable="stare_civilaColumn" msprop:Generator_UserColumnName="stare_civila" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cetatenie" msprop:Generator_ColumnVarNameInTable="columncetatenie" msprop:Generator_ColumnPropNameInRow="cetatenie" msprop:Generator_ColumnPropNameInTable="cetatenieColumn" msprop:Generator_UserColumnName="cetatenie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cetatenie_op" msprop:Generator_ColumnVarNameInTable="columncetatenie_op" msprop:Generator_ColumnPropNameInRow="cetatenie_op" msprop:Generator_ColumnPropNameInTable="cetatenie_opColumn" msprop:Generator_UserColumnName="cetatenie_op" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="etnie" msprop:Generator_ColumnVarNameInTable="columnetnie" msprop:Generator_ColumnPropNameInRow="etnie" msprop:Generator_ColumnPropNameInTable="etnieColumn" msprop:Generator_UserColumnName="etnie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="incadrare" msprop:Generator_ColumnVarNameInTable="columnincadrare" msprop:Generator_ColumnPropNameInRow="incadrare" msprop:Generator_ColumnPropNameInTable="incadrareColumn" msprop:Generator_UserColumnName="incadrare" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnp" msprop:Generator_ColumnVarNameInTable="columncnp" msprop:Generator_ColumnPropNameInRow="cnp" msprop:Generator_ColumnPropNameInTable="cnpColumn" msprop:Generator_UserColumnName="cnp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="serie" msprop:Generator_ColumnVarNameInTable="columnserie" msprop:Generator_ColumnPropNameInRow="serie" msprop:Generator_ColumnPropNameInTable="serieColumn" msprop:Generator_UserColumnName="serie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numar_cnp" msprop:Generator_ColumnVarNameInTable="columnnumar_cnp" msprop:Generator_ColumnPropNameInRow="numar_cnp" msprop:Generator_ColumnPropNameInTable="numar_cnpColumn" msprop:Generator_UserColumnName="numar_cnp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="eliberat_de_catre" msprop:Generator_ColumnVarNameInTable="columneliberat_de_catre" msprop:Generator_ColumnPropNameInRow="eliberat_de_catre" msprop:Generator_ColumnPropNameInTable="eliberat_de_catreColumn" msprop:Generator_UserColumnName="eliberat_de_catre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_eliberare" msprop:Generator_ColumnVarNameInTable="columndata_eliberare" msprop:Generator_ColumnPropNameInRow="data_eliberare" msprop:Generator_ColumnPropNameInTable="data_eliberareColumn" msprop:Generator_UserColumnName="data_eliberare" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="studii" msprop:Generator_ColumnVarNameInTable="columnstudii" msprop:Generator_ColumnPropNameInRow="studii" msprop:Generator_ColumnPropNameInTable="studiiColumn" msprop:Generator_UserColumnName="studii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unitate_invatamant" msprop:Generator_ColumnVarNameInTable="columnunitate_invatamant" msprop:Generator_ColumnPropNameInRow="unitate_invatamant" msprop:Generator_ColumnPropNameInTable="unitate_invatamantColumn" msprop:Generator_UserColumnName="unitate_invatamant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="specializare" msprop:Generator_ColumnVarNameInTable="columnspecializare" msprop:Generator_ColumnPropNameInRow="specializare" msprop:Generator_ColumnPropNameInTable="specializareColumn" msprop:Generator_UserColumnName="specializare" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="oras_studii" msprop:Generator_ColumnVarNameInTable="columnoras_studii" msprop:Generator_ColumnPropNameInRow="oras_studii" msprop:Generator_ColumnPropNameInTable="oras_studiiColumn" msprop:Generator_UserColumnName="oras_studii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="judet_studii" msprop:Generator_ColumnVarNameInTable="columnjudet_studii" msprop:Generator_ColumnPropNameInRow="judet_studii" msprop:Generator_ColumnPropNameInTable="judet_studiiColumn" msprop:Generator_UserColumnName="judet_studii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tara_studii" msprop:Generator_ColumnVarNameInTable="columntara_studii" msprop:Generator_ColumnPropNameInRow="tara_studii" msprop:Generator_ColumnPropNameInTable="tara_studiiColumn" msprop:Generator_UserColumnName="tara_studii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="forma_invatamant" msprop:Generator_ColumnVarNameInTable="columnforma_invatamant" msprop:Generator_ColumnPropNameInRow="forma_invatamant" msprop:Generator_ColumnPropNameInTable="forma_invatamantColumn" msprop:Generator_UserColumnName="forma_invatamant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="media" msprop:Generator_ColumnVarNameInTable="columnmedia" msprop:Generator_ColumnPropNameInRow="media" msprop:Generator_ColumnPropNameInTable="mediaColumn" msprop:Generator_UserColumnName="media" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="durata_studii" msprop:Generator_ColumnVarNameInTable="columndurata_studii" msprop:Generator_ColumnPropNameInRow="durata_studii" msprop:Generator_ColumnPropNameInTable="durata_studiiColumn" msprop:Generator_UserColumnName="durata_studii" type="xs:int" minOccurs="0" />
+              <xs:element name="data_absolvirii" msprop:Generator_ColumnVarNameInTable="columndata_absolvirii" msprop:Generator_ColumnPropNameInRow="data_absolvirii" msprop:Generator_ColumnPropNameInTable="data_absolviriiColumn" msprop:Generator_UserColumnName="data_absolvirii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipul_diploma" msprop:Generator_ColumnVarNameInTable="columntipul_diploma" msprop:Generator_ColumnPropNameInRow="tipul_diploma" msprop:Generator_ColumnPropNameInTable="tipul_diplomaColumn" msprop:Generator_UserColumnName="tipul_diploma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="serie_diploma" msprop:Generator_ColumnVarNameInTable="columnserie_diploma" msprop:Generator_ColumnPropNameInRow="serie_diploma" msprop:Generator_ColumnPropNameInTable="serie_diplomaColumn" msprop:Generator_UserColumnName="serie_diploma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numar_diploma" msprop:Generator_ColumnVarNameInTable="columnnumar_diploma" msprop:Generator_ColumnPropNameInRow="numar_diploma" msprop:Generator_ColumnPropNameInTable="numar_diplomaColumn" msprop:Generator_UserColumnName="numar_diploma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emis" msprop:Generator_ColumnVarNameInTable="columnemis" msprop:Generator_ColumnPropNameInRow="emis" msprop:Generator_ColumnPropNameInTable="emisColumn" msprop:Generator_UserColumnName="emis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_emiterii" msprop:Generator_ColumnVarNameInTable="columndata_emiterii" msprop:Generator_ColumnPropNameInRow="data_emiterii" msprop:Generator_ColumnPropNameInTable="data_emiteriiColumn" msprop:Generator_UserColumnName="data_emiterii" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="numarul_foii_matricole" msprop:Generator_ColumnVarNameInTable="columnnumarul_foii_matricole" msprop:Generator_ColumnPropNameInRow="numarul_foii_matricole" msprop:Generator_ColumnPropNameInTable="numarul_foii_matricoleColumn" msprop:Generator_UserColumnName="numarul_foii_matricole" type="xs:int" minOccurs="0" />
+              <xs:element name="diploma_original" msprop:Generator_ColumnVarNameInTable="columndiploma_original" msprop:Generator_ColumnPropNameInRow="diploma_original" msprop:Generator_ColumnPropNameInTable="diploma_originalColumn" msprop:Generator_UserColumnName="diploma_original" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adeverinta_absolvire_original" msprop:Generator_ColumnVarNameInTable="columnadeverinta_absolvire_original" msprop:Generator_ColumnPropNameInRow="adeverinta_absolvire_original" msprop:Generator_ColumnPropNameInTable="adeverinta_absolvire_originalColumn" msprop:Generator_UserColumnName="adeverinta_absolvire_original" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adeverinta_absolvire_copielegalizata" msprop:Generator_ColumnVarNameInTable="columnadeverinta_absolvire_copielegalizata" msprop:Generator_ColumnPropNameInRow="adeverinta_absolvire_copielegalizata" msprop:Generator_ColumnPropNameInTable="adeverinta_absolvire_copielegalizataColumn" msprop:Generator_UserColumnName="adeverinta_absolvire_copielegalizata" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="atestat_original" msprop:Generator_ColumnVarNameInTable="columnatestat_original" msprop:Generator_ColumnPropNameInRow="atestat_original" msprop:Generator_ColumnPropNameInTable="atestat_originalColumn" msprop:Generator_UserColumnName="atestat_original" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="atestat_legalizat" msprop:Generator_ColumnVarNameInTable="columnatestat_legalizat" msprop:Generator_ColumnPropNameInRow="atestat_legalizat" msprop:Generator_ColumnPropNameInTable="atestat_legalizatColumn" msprop:Generator_UserColumnName="atestat_legalizat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="certificat_nastere" msprop:Generator_ColumnVarNameInTable="columncertificat_nastere" msprop:Generator_ColumnPropNameInRow="certificat_nastere" msprop:Generator_ColumnPropNameInTable="certificat_nastereColumn" msprop:Generator_UserColumnName="certificat_nastere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="certificat_casatorie" msprop:Generator_ColumnVarNameInTable="columncertificat_casatorie" msprop:Generator_ColumnPropNameInRow="certificat_casatorie" msprop:Generator_ColumnPropNameInTable="certificat_casatorieColumn" msprop:Generator_UserColumnName="certificat_casatorie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto_3_4_da" msprop:Generator_ColumnVarNameInTable="columnfoto_3_4_da" msprop:Generator_ColumnPropNameInRow="foto_3_4_da" msprop:Generator_ColumnPropNameInTable="foto_3_4_daColumn" msprop:Generator_UserColumnName="foto_3_4_da" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto_3_4_nu" msprop:Generator_ColumnVarNameInTable="columnfoto_3_4_nu" msprop:Generator_ColumnPropNameInRow="foto_3_4_nu" msprop:Generator_ColumnPropNameInTable="foto_3_4_nuColumn" msprop:Generator_UserColumnName="foto_3_4_nu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adeverinta_med_da" msprop:Generator_ColumnVarNameInTable="columnadeverinta_med_da" msprop:Generator_ColumnPropNameInRow="adeverinta_med_da" msprop:Generator_ColumnPropNameInTable="adeverinta_med_daColumn" msprop:Generator_UserColumnName="adeverinta_med_da" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="adeverinta_med_nu" msprop:Generator_ColumnVarNameInTable="columnadeverinta_med_nu" msprop:Generator_ColumnPropNameInRow="adeverinta_med_nu" msprop:Generator_ColumnPropNameInTable="adeverinta_med_nuColumn" msprop:Generator_UserColumnName="adeverinta_med_nu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="copie_buletin_da" msprop:Generator_ColumnVarNameInTable="columncopie_buletin_da" msprop:Generator_ColumnPropNameInRow="copie_buletin_da" msprop:Generator_ColumnPropNameInTable="copie_buletin_daColumn" msprop:Generator_UserColumnName="copie_buletin_da" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="copie_buletin_nu" msprop:Generator_ColumnVarNameInTable="columncopie_buletin_nu" msprop:Generator_ColumnPropNameInRow="copie_buletin_nu" msprop:Generator_ColumnPropNameInTable="copie_buletin_nuColumn" msprop:Generator_UserColumnName="copie_buletin_nu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foaie_matricola_da" msprop:Generator_ColumnVarNameInTable="columnfoaie_matricola_da" msprop:Generator_ColumnPropNameInRow="foaie_matricola_da" msprop:Generator_ColumnPropNameInTable="foaie_matricola_daColumn" msprop:Generator_UserColumnName="foaie_matricola_da" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foaie_matricola_nu" msprop:Generator_ColumnVarNameInTable="columnfoaie_matricola_nu" msprop:Generator_ColumnPropNameInRow="foaie_matricola_nu" msprop:Generator_ColumnPropNameInTable="foaie_matricola_nuColumn" msprop:Generator_UserColumnName="foaie_matricola_nu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="taxa_achitata_da" msprop:Generator_ColumnVarNameInTable="columntaxa_achitata_da" msprop:Generator_ColumnPropNameInRow="taxa_achitata_da" msprop:Generator_ColumnPropNameInTable="taxa_achitata_daColumn" msprop:Generator_UserColumnName="taxa_achitata_da" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="taxa_achitata_nu" msprop:Generator_ColumnVarNameInTable="columntaxa_achitata_nu" msprop:Generator_ColumnPropNameInRow="taxa_achitata_nu" msprop:Generator_ColumnPropNameInTable="taxa_achitata_nuColumn" msprop:Generator_UserColumnName="taxa_achitata_nu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="introducere_date" msprop:Generator_ColumnVarNameInTable="columnintroducere_date" msprop:Generator_ColumnPropNameInRow="introducere_date" msprop:Generator_ColumnPropNameInTable="introducere_dateColumn" msprop:Generator_UserColumnName="introducere_date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="semnatura" msprop:Generator_ColumnVarNameInTable="columnsemnatura" msprop:Generator_ColumnPropNameInRow="semnatura" msprop:Generator_ColumnPropNameInTable="semnaturaColumn" msprop:Generator_UserColumnName="semnatura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:info" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
