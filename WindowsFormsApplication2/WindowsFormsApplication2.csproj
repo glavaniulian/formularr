@@ -75,6 +75,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data_source.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>data_source.xsd</DependentUpon>
+    </Compile>
     <Compile Include="data_sourceDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +114,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="data_source.xsc">
+      <DependentUpon>data_source.xsd</DependentUpon>
+    </None>
+    <None Include="data_source.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>data_source.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_source.xss">
+      <DependentUpon>data_source.xsd</DependentUpon>
+    </None>
     <None Include="data_sourceDataSet.xsc">
       <DependentUpon>data_sourceDataSet.xsd</DependentUpon>
     </None>

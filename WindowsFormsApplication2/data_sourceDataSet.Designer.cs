@@ -4461,11 +4461,44 @@ namespace WindowsFormsApplication2.data_sourceDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura FROM dbo.info";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, 
+                         stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, 
+                         media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, 
+                         adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, 
+                         copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura
+FROM            info
+WHERE        (nume_prenume LIKE @nume_prenume + '%')";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nume_prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "nume_prenume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, 
+                         stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, 
+                         media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, 
+                         adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, 
+                         copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura
+FROM            info
+WHERE        (nume_prenume LIKE @nume_prenume + N'%')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nume_prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "nume_prenume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"SELECT        Id, fac, dom, spec, data, form_invat, nume_prenume, cod_legitimatie, localitate, judet, tara, strada, numar, bloc, scara, etaj, apartament, sector, cod_postal, data_n, loc_nastere, judet_n, tara_n, sexul, 
+                         stare_civila, cetatenie, cetatenie_op, etnie, incadrare, cnp, serie, numar_cnp, eliberat_de_catre, data_eliberare, studii, unitate_invatamant, specializare, oras_studii, judet_studii, tara_studii, forma_invatamant, 
+                         media, durata_studii, data_absolvirii, tipul_diploma, serie_diploma, numar_diploma, emis, data_emiterii, numarul_foii_matricole, diploma_original, adeverinta_absolvire_original, 
+                         adeverinta_absolvire_copielegalizata, atestat_original, atestat_legalizat, certificat_nastere, certificat_casatorie, foto_3_4_da, foto_3_4_nu, adeverinta_med_da, adeverinta_med_nu, copie_buletin_da, 
+                         copie_buletin_nu, foaie_matricola_da, foaie_matricola_nu, taxa_achitata_da, taxa_achitata_nu, introducere_date, semnatura
+FROM            info
+WHERE        (nume_prenume LIKE @nume_prenume + N'%')";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nume_prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "nume_prenume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4490,6 +4523,63 @@ namespace WindowsFormsApplication2.data_sourceDataSetTableAdapters {
             data_sourceDataSet.infoDataTable dataTable = new data_sourceDataSet.infoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int CAUTA(data_sourceDataSet.infoDataTable dataTable, string nume_prenume) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((nume_prenume == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nume_prenume));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int CautareNUME(data_sourceDataSet.infoDataTable dataTable, string nume_prenume) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((nume_prenume == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nume_prenume));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int CautareNume1(data_sourceDataSet.infoDataTable dataTable, string nume_prenume) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((nume_prenume == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nume_prenume));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -13,7 +13,14 @@ namespace WindowsFormsApplication2
 {
     public partial class FORM1 : Form
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\formular\WindowsFormsApplication2\data_source.mdf;Integrated Security=True;Connect Timeout=30");
+
+        // schimbi toata linia dupa @ (sa pastrezi " "). Ca sa-ti fie mai usor, pui fisierul in d/c.. si schimbi doar g-ul ala. daca nu merge asa
+        // dai la tools > connect to a database cauti in formular > WindowsFormsApplication2 > data_source.mdf iar dupa SERVER Explorer iti apare 
+        // baza de date dai click dreapta pe data_source.mdf si propietati dupa copi toata linia de la Connection String si o schimbi cu lini de mai jos
+
+
+
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=I:\formular\WindowsFormsApplication2\data_source.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cmd = new SqlCommand();
         SqlCommand cmd2 = new SqlCommand();
         
